@@ -1,7 +1,7 @@
 from django.db import models
 
-class product(models.Model):
-    title = models.TextField()
-    description = models.TextField()
+class Product(models.Model):
+    title = models.CharField(max_length=120)
+    description = models.TextField(blank= True, null= True)
     price = models.FloatField()
-    summary = models.TextField(default = 'this is cool!')
+    summary = models.TextField()
