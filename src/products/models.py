@@ -5,3 +5,4 @@ class Product(models.Model):
     description = models.TextField(blank= True, null= True)
     price = models.FloatField()
     summary = models.TextField()
+    featured = models.BooleanField(default= False)
