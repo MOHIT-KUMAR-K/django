@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 
 {% block mohit %}
-<h1> ITEM </h1>
-{% if  description != '' %}{{description}} {% else %} Description is NULL {% endif %}
+<h1> {{object.title}} </h1>
+<p>{% if  object.description != '' %}{{object.description}} {% else %} Description is NULL {% endif %}</p>
+
+{{object.price}}
 {% endblock mohit %}
+
